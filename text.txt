@@ -1,0 +1,25 @@
+<!doctype html>
+<head>
+    <script src="anychart-bundle.min.js" type="text/javascript"></script>
+    <script>
+        anychart.onDocumentLoad(function() {
+            // create an instance of pie chart with data
+            var chart = anychart.pie([
+                ["Заяц", 5],
+                ["Лось", 2],
+                ["Crepe Suzette", 2],
+                ["American blueberry", 2],
+                ["Buttermilk", 1]
+            ]);
+            chart.title("Web full");
+            // pass the container where chart will be drawn
+            chart.container("container");
+            // call the chart draw() method to initiate chart drawing
+            chart.draw();
+        });
+    </script>
+</head>
+<body>
+    <div id="container" style="width: 500px; height: 400px;"></div>
+</body>
+</html>
